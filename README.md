@@ -5,6 +5,9 @@
 A modern, minimalistic countdown timer built with **React** and **Tailwind CSS**.
 Users can set custom minutes and start a clean, elegant countdown experience.
 
+🔗 **Live Demo:**
+[https://countdown-timer-steel-nu.vercel.app/](https://countdown-timer-steel-nu.vercel.app/)
+
 ---
 
 ## ✨ Features
@@ -13,9 +16,9 @@ Users can set custom minutes and start a clean, elegant countdown experience.
 * ▶️ Start / Pause functionality
 * 🔄 Reset timer
 * ⛔ Input disabled while running
-* 🧹 Proper interval cleanup (no memory leaks)
+* 🧹 Proper interval cleanup (prevents memory leaks)
 * 🎨 Modern glassmorphism UI
-* 🌙 Dark premium gradient background
+* 🌙 Dark gradient aesthetic
 * 📱 Fully responsive layout
 
 ---
@@ -32,14 +35,14 @@ Users can set custom minutes and start a clean, elegant countdown experience.
 
 ---
 
-## 📸 UI Concept
+## 📸 UI Preview
 
-Minimalistic glass-style centered card layout:
+Minimalistic glass-style centered card layout featuring:
 
 * Gradient dark background
 * Soft blur glass container
-* Large lightweight digital typography
-* Modern rounded buttons with glow shadow
+* Lightweight digital typography
+* Rounded buttons with subtle glow shadows
 
 ---
 
@@ -49,7 +52,7 @@ Minimalistic glass-style centered card layout:
 
 ```bash
 git clone https://github.com/muzaffarbekmustafayev/CountdownTimer.git
-cd countdown-timer
+cd CountdownTimer
 ```
 
 ### 2️⃣ Install dependencies
@@ -60,11 +63,13 @@ npm install
 
 ### 3️⃣ Run development server
 
+For Vite:
+
 ```bash
 npm run dev
 ```
 
-or (if using CRA)
+For Create React App:
 
 ```bash
 npm start
@@ -79,33 +84,32 @@ src/
  ├── components/
  │     └── CountdownTimer.jsx
  ├── App.jsx
- └── main.jsx / index.js
+ └── main.jsx
 ```
-### To Live Preview
-https://countdown-timer-steel-nu.vercel.app/(https://countdown-timer-steel-nu.vercel.app/)
+
 ---
 
 ## 🧠 Logic Overview
 
-* Timer converts minutes → seconds.
-* `setInterval` decreases time every second.
-* Cleanup handled inside `useEffect`.
-* Timer automatically stops at 0.
-* Input locked while timer is running.
-* Reset clears interval and state.
+* Converts input minutes → seconds.
+* Uses `setInterval` to decrement time every second.
+* Ensures proper cleanup inside `useEffect`.
+* Automatically stops at zero.
+* Reset clears both interval and state.
+* Prevents input modification while active.
 
 ---
 
-## 🧩 Possible Improvements (Next-Level Ideas)
+## 🧩 Possible Improvements
 
-* 🔔 Sound notification when timer ends
-* 🔵 Circular SVG progress ring
+* 🔔 Sound notification on completion
+* 🔵 Circular SVG progress indicator
 * 💾 LocalStorage persistence
 * 🎛 Pomodoro mode toggle
-* ⌨ Keyboard shortcuts (Space to Start/Pause)
+* ⌨ Keyboard shortcuts
 * 🧪 Unit testing with Jest
-* 🔄 Smooth number transition animation
-* 🟦 TypeScript version
+* 🟦 TypeScript migration
+* 🌗 Dark / Light theme switch
 
 ---
 
@@ -115,8 +119,8 @@ This project demonstrates:
 
 * Clean state management
 * Proper side-effect handling
-* Modern UI design with Tailwind
-* Reusable component structure
-* Production-ready coding practices
+* Minimal yet premium UI implementation
+* Structured component design
+* Production-ready coding discipline
 
-It is intentionally minimal but architected cleanly — showing both design sense and engineering discipline.
+It is intentionally minimal but architected thoughtfully — showcasing both design awareness and engineering fundamentals.
